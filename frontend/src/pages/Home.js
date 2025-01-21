@@ -3,8 +3,7 @@ import WorkoutForm from "../components/WorkoutForm";
 import useFetch from "../hooks/useFetch";
 
 const Home = () => {
-    const { data: workouts, isPending, error } = useFetch(`${process.env.REACT_APP_API_URL}`)
-
+    const { workouts, isPending, error } = useFetch(`${process.env.REACT_APP_API_URL}`)
     return (
         <div className="home">
             {isPending && <p>Loading...</p>}
