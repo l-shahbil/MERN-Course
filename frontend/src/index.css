@@ -100,3 +100,47 @@ div.error {
 input.error {
   border: 1px solid var(--error);
 }
+
+/* Responsive design for small screens */
+@media (max-width: 1024px) {
+  .home {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .workout-details {
+    margin: 10px 0;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .workout-details {
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .workout-details h4 {
+    font-size: 1.1em;
+  }
+  .workout-details p {
+    font-size: 0.8em;
+  }
+  .workout-details {
+    padding: 10px;
+  }
+}
